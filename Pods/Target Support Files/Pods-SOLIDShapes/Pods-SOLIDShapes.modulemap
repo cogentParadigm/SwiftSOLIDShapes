@@ -1,0 +1,6 @@
+framework module Pods_SOLIDShapes {
+  umbrella header "Pods-SOLIDShapes-umbrella.h"
+
+  export *
+  module * { export * }
+}
