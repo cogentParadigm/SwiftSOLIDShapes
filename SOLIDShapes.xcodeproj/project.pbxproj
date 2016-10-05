@@ -134,12 +134,12 @@
 			path = Calculators;
 			sourceTree = "<group>";
 		};
-		414AB6B71DA5572300194BE8 /* Outputter */ = {
+		414AB6B71DA5572300194BE8 /* Outputters */ = {
 			isa = PBXGroup;
 			children = (
 				414AB6B81DA5575500194BE8 /* ConsoleStringOutputter.swift */,
 			);
-			name = Outputter;
+			path = Outputters;
 			sourceTree = "<group>";
 		};
 		415D03A51DA494D400767D24 = {
@@ -174,7 +174,7 @@
 				415D03E61DA496D500767D24 /* Models */,
 				415D03E31DA4958C00767D24 /* VCs */,
 				414AB6B51DA555BA00194BE8 /* Calculators */,
-				414AB6B71DA5572300194BE8 /* Outputter */,
+				414AB6B71DA5572300194BE8 /* Outputters */,
 				415D04051DA4B42A00767D24 /* Utilities */,
 				415D03E21DA4957500767D24 /* Supporting Files */,
 			);
