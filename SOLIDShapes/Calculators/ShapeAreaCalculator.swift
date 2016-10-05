@@ -11,6 +11,10 @@ import UIKit
 class ShapeAreaCalculator: NSObject {
     let shapes:[ShapeInterface]
     
+    override var description: String {
+        return "\(shapes.count) shapes with a total area of \(sum())"
+    }
+    
     init(shapes:[ShapeInterface]) {
         self.shapes = shapes
         super.init()
@@ -21,6 +25,7 @@ class ShapeAreaCalculator: NSObject {
         for shape in shapes {
             area += shape.area()
         }
+        return area
     }
     
 }

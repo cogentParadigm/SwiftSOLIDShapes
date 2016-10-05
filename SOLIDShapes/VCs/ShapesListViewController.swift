@@ -28,6 +28,19 @@ class ShapesListViewController: UITableViewController, ShapeSavedListener {
         tableView.rowHeight = UITableViewAutomaticDimension
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(createShape))
+        
+        let button = UIBarButtonItem(title: "Calculate Area", style: .Plain, target: self, action: #selector(calculateArea))
+        setToolbarItems([button], animated: true)
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setToolbarHidden(false, animated: animated)
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setToolbarHidden(true, animated: animated)
     }
 
     // MARK: - Table view data source
@@ -56,6 +69,12 @@ class ShapesListViewController: UITableViewController, ShapeSavedListener {
     func didCreateShape(shape: ShapeInterface) {
         shapes.append(shape)
         tableView.reloadData()
+    }
+    
+    func calculateArea() {
+        let calculator = ShapeAreaCalculator(shapes: shapes)
+        let output = ConsoleStringOutputter()
+        output.output(calculator.description)
     }
 
 }

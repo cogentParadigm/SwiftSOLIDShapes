@@ -18,9 +18,9 @@ class BadShapeAreaCalculator: NSObject {
     func sum() -> Double {
         var area:Double = 0
         for shape in shapes {
-            if let circle = shape as Circle {
+            if let circle = shape as? Circle {
                 area += M_PI * pow(circle.radius, 2)
-            } else if let rect = shape as Rectangle {
+            } else if let rect = shape as? Rectangle {
                 area += rect.width * rect.height
             }
         }

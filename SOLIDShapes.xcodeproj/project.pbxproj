@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		414AB6B21DA5547400194BE8 /* ShapeAreaCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414AB6B11DA5547400194BE8 /* ShapeAreaCalculator.swift */; };
 		414AB6B41DA554A500194BE8 /* BadShapeAreaCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414AB6B31DA554A500194BE8 /* BadShapeAreaCalculator.swift */; };
+		414AB6B91DA5575500194BE8 /* ConsoleStringOutputter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414AB6B81DA5575500194BE8 /* ConsoleStringOutputter.swift */; };
+		414AB6BB1DA557D100194BE8 /* StringOutputInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414AB6BA1DA557D100194BE8 /* StringOutputInterface.swift */; };
 		415D03B21DA494D400767D24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415D03B11DA494D400767D24 /* AppDelegate.swift */; };
 		415D03BA1DA494D400767D24 /* SOLIDShapes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 415D03B81DA494D400767D24 /* SOLIDShapes.xcdatamodeld */; };
 		415D03BC1DA494D400767D24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 415D03BB1DA494D400767D24 /* Assets.xcassets */; };
@@ -57,8 +59,10 @@
 		3A7E06E7E222AB10326086C2 /* Pods-SOLIDShapesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOLIDShapesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SOLIDShapesUITests/Pods-SOLIDShapesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		414AB6B11DA5547400194BE8 /* ShapeAreaCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeAreaCalculator.swift; sourceTree = "<group>"; };
 		414AB6B31DA554A500194BE8 /* BadShapeAreaCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadShapeAreaCalculator.swift; sourceTree = "<group>"; };
+		414AB6B81DA5575500194BE8 /* ConsoleStringOutputter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleStringOutputter.swift; sourceTree = "<group>"; };
+		414AB6BA1DA557D100194BE8 /* StringOutputInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringOutputInterface.swift; sourceTree = "<group>"; };
 		415D03AE1DA494D400767D24 /* SOLIDShapes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOLIDShapes.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		415D03B11DA494D400767D24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		415D03B11DA494D400767D24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = SOLIDShapes/AppDelegate.swift; sourceTree = "<group>"; };
 		415D03B91DA494D400767D24 /* SOLIDShapes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SOLIDShapes.xcdatamodel; sourceTree = "<group>"; };
 		415D03BB1DA494D400767D24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		415D03C01DA494D400767D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -130,10 +134,19 @@
 			path = Calculators;
 			sourceTree = "<group>";
 		};
+		414AB6B71DA5572300194BE8 /* Outputter */ = {
+			isa = PBXGroup;
+			children = (
+				414AB6B81DA5575500194BE8 /* ConsoleStringOutputter.swift */,
+			);
+			name = Outputter;
+			sourceTree = "<group>";
+		};
 		415D03A51DA494D400767D24 = {
 			isa = PBXGroup;
 			children = (
 				415D03B01DA494D400767D24 /* SOLIDShapes */,
+				415D03B11DA494D400767D24 /* AppDelegate.swift */,
 				415D03C81DA494D400767D24 /* SOLIDShapesTests */,
 				415D03D31DA494D500767D24 /* SOLIDShapesUITests */,
 				415D03AF1DA494D400767D24 /* Products */,
@@ -161,7 +174,7 @@
 				415D03E61DA496D500767D24 /* Models */,
 				415D03E31DA4958C00767D24 /* VCs */,
 				414AB6B51DA555BA00194BE8 /* Calculators */,
-				415D03B11DA494D400767D24 /* AppDelegate.swift */,
+				414AB6B71DA5572300194BE8 /* Outputter */,
 				415D04051DA4B42A00767D24 /* Utilities */,
 				415D03E21DA4957500767D24 /* Supporting Files */,
 			);
@@ -222,6 +235,7 @@
 				415D03FD1DA4AC5900767D24 /* ShapesNavigationInterface.swift */,
 				415D04011DA4AFB700767D24 /* MainNavigationInterface.swift */,
 				415D04081DA5451700767D24 /* ShapeSavedListener.swift */,
+				414AB6BA1DA557D100194BE8 /* StringOutputInterface.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -555,6 +569,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				415D03E81DA4976D00767D24 /* Rectangle.swift in Sources */,
+				414AB6B91DA5575500194BE8 /* ConsoleStringOutputter.swift in Sources */,
 				415D03E51DA495EF00767D24 /* ShapesListViewController.swift in Sources */,
 				415D03BA1DA494D400767D24 /* SOLIDShapes.xcdatamodeld in Sources */,
 				415D03F11DA4A01700767D24 /* MainController.swift in Sources */,
@@ -568,6 +583,7 @@
 				415D040B1DA547C300767D24 /* RectangleFormViewController.swift in Sources */,
 				415D03FC1DA4A99B00767D24 /* ShapesController.swift in Sources */,
 				415D03EA1DA4978000767D24 /* Circle.swift in Sources */,
+				414AB6BB1DA557D100194BE8 /* StringOutputInterface.swift in Sources */,
 				414AB6B41DA554A500194BE8 /* BadShapeAreaCalculator.swift in Sources */,
 				415D04071DA4B46800767D24 /* AlertBuilder.swift in Sources */,
 				415D04041DA4B25D00767D24 /* ControllerFactory.swift in Sources */,
