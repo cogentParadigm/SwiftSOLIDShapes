@@ -11,6 +11,7 @@
 		414AB6B41DA554A500194BE8 /* BadShapeAreaCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414AB6B31DA554A500194BE8 /* BadShapeAreaCalculator.swift */; };
 		414AB6B91DA5575500194BE8 /* ConsoleStringOutputter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414AB6B81DA5575500194BE8 /* ConsoleStringOutputter.swift */; };
 		414AB6BB1DA557D100194BE8 /* StringOutputInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414AB6BA1DA557D100194BE8 /* StringOutputInterface.swift */; };
+		414AB6BD1DA55D7B00194BE8 /* AlertStringOutputter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414AB6BC1DA55D7B00194BE8 /* AlertStringOutputter.swift */; };
 		415D03B21DA494D400767D24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415D03B11DA494D400767D24 /* AppDelegate.swift */; };
 		415D03BA1DA494D400767D24 /* SOLIDShapes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 415D03B81DA494D400767D24 /* SOLIDShapes.xcdatamodeld */; };
 		415D03BC1DA494D400767D24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 415D03BB1DA494D400767D24 /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 		414AB6B31DA554A500194BE8 /* BadShapeAreaCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadShapeAreaCalculator.swift; sourceTree = "<group>"; };
 		414AB6B81DA5575500194BE8 /* ConsoleStringOutputter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleStringOutputter.swift; sourceTree = "<group>"; };
 		414AB6BA1DA557D100194BE8 /* StringOutputInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringOutputInterface.swift; sourceTree = "<group>"; };
+		414AB6BC1DA55D7B00194BE8 /* AlertStringOutputter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertStringOutputter.swift; sourceTree = "<group>"; };
 		415D03AE1DA494D400767D24 /* SOLIDShapes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOLIDShapes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		415D03B11DA494D400767D24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = SOLIDShapes/AppDelegate.swift; sourceTree = "<group>"; };
 		415D03B91DA494D400767D24 /* SOLIDShapes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SOLIDShapes.xcdatamodel; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				414AB6B81DA5575500194BE8 /* ConsoleStringOutputter.swift */,
+				414AB6BC1DA55D7B00194BE8 /* AlertStringOutputter.swift */,
 			);
 			path = Outputters;
 			sourceTree = "<group>";
@@ -585,6 +588,7 @@
 				415D03EA1DA4978000767D24 /* Circle.swift in Sources */,
 				414AB6BB1DA557D100194BE8 /* StringOutputInterface.swift in Sources */,
 				414AB6B41DA554A500194BE8 /* BadShapeAreaCalculator.swift in Sources */,
+				414AB6BD1DA55D7B00194BE8 /* AlertStringOutputter.swift in Sources */,
 				415D04071DA4B46800767D24 /* AlertBuilder.swift in Sources */,
 				415D04041DA4B25D00767D24 /* ControllerFactory.swift in Sources */,
 				415D04021DA4AFB700767D24 /* MainNavigationInterface.swift in Sources */,
