@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ConsoleStringOutputter: NSObject {
+class ConsoleStringOutputter: NSObject, StringOutputInterface {
     func output(data:String) {
         print(data)
     }

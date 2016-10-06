@@ -12,9 +12,11 @@ class ShapesListViewController: UITableViewController, ShapeSavedListener {
     
     var shapes = [ShapeInterface]()
     let navigation:ShapesNavigationInterface
+    let output:StringOutputInterface
     
-    init(navigation:ShapesNavigationInterface) {
+    init(navigation:ShapesNavigationInterface, output:StringOutputInterface) {
         self.navigation = navigation
+        self.output = output
         super.init(style: .Plain)
     }
     
@@ -73,7 +75,6 @@ class ShapesListViewController: UITableViewController, ShapeSavedListener {
     
     func calculateArea() {
         let calculator = ShapeAreaCalculator(shapes: shapes)
-        let output = ConsoleStringOutputter()
         output.output(calculator.description)
     }
 

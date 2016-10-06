@@ -11,7 +11,7 @@ import UIKit
 class VCFactory: NSObject {
     let factories:FactoryFactory
     lazy var _shapesList:ShapesListViewController = {
-       return ShapesListViewController(navigation:self.factories.main.shapes)
+        return ShapesListViewController(navigation:self.factories.main.shapes, output:AlertStringOutputter())
     }()
     init(factories:FactoryFactory) {
         self.factories = factories
